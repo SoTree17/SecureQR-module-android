@@ -19,10 +19,34 @@ dependencies {
 
 ## Usage
 
+[ResultActivity.java]
 ``` Java
-dfd
+public class ResultActivity extends AppCompatActivity {
+    @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_result);
+
+            setContents();
+        }
+        
+        private void setContents() {
+            Intent intent = getIntent();
+            url = intent.getStringExtra("url");
+            int isAuthQR = intent.getIntExtra("isAuthQR", 0);
+
+            if (isAuthQR == SecureQR.IsAuthQR) {
+                authMessage.setText("보안 QR 코드 입니다."); 
+            } else {
+                authMessage.setText("보안 QR 코드가 아닙니다.");
+            }
+
+            urlText.setText(url);
+        }
+}
 ```
 
+[MainActivity.java]
 ``` Java
 final String authURL = "http://yourServerURL";
 final int QR_RequestCode = 12345;  // Any number what you want
