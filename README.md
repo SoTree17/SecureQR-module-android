@@ -77,6 +77,7 @@ int QR_RequestCode : zxing request Code
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         IntentResult result = IntentIntegrator.parseActivityResult(resultCode, data);
 
+        // process result of scanned data with Zxing library
         secureQR.processResult(result);
 
         super.onActivityResult(requestCode, resultCode, data);
