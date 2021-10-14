@@ -53,7 +53,7 @@ final int QR_RequestCode = 12345;  // Any number what you want
 final String packageName = "com.your.package";      
 final String activityName = "ResultActivity";
     
-@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
