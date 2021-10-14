@@ -13,7 +13,7 @@ allprojects {
 // Module gradle
 dependencies {
     ...
-    implementation 'com.github.SoTree17:SecureQR-module-android:0.0.2'
+    implementation 'com.github.SoTree17:SecureQR-module-android:0.0.3'
 }
 ```
 
