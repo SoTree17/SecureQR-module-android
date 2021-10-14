@@ -36,8 +36,8 @@ public class SecureQR {
 
     private Context context;
 
-    private final int IsAuthQR = 1;
-    private final int IsNotAuthQR = -1;
+    public final static int IsAuthQR = 1;
+    public final static int IsNotAuthQR = -1;
     private final int DefaultIndex = -1;
     private int RequestCode = 0x0000c0de;
 
