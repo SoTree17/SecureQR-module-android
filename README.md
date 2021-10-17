@@ -83,13 +83,14 @@ final String activityName = "ResultActivity";
 
 ```
 * <b>Constructor of Class SecureQR </b>  
-|Type|Method|Description|  
+
+|Type|Name|Description|  
 |----|------|-----------|
-|Context|context|Application Context|
-|String|packageName|A package name of activity that you will use as a ResultActivity of SecureQR|
-|String|activityName|Name of ResultActivity of SecureQR|
-|String|authURL|(Must be checked!) URL of your auth server|
-|int|QR_RequestCode|zxing request Code|
+|Context|context|Application Context.|
+|String|packageName|A package name of activity that you will use as a ResultActivity of SecureQR.|
+|String|activityName|Name of ResultActivity of SecureQR.|
+|String|authURL|(Must be checked!) URL of your auth server.|
+|int|QR_RequestCode|zxing request Code.|
 
 ``` Java
 @Override
