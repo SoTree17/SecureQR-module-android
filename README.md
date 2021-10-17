@@ -1,3 +1,7 @@
+## Requrements 
+- `Java==8`
+- `Android==7.0(Platform Level 24)`
+
 ## Gradle
 ``` 
 // Project gradle
@@ -15,7 +19,7 @@ dependencies {
     ...
     implementation 'com.journeyapps:zxing-android-embedded:$ZxingVersion'       // 4.2.0
     implementation 'com.squareup.retrofit2:retrofit:$RetrofitVersion'           // 2.9.0
-    implementation 'com.github.SoTree17:SecureQR-module-android:0.0.3'
+    implementation 'com.github.SoTree17:SecureQR-module-android:0.0.3'          // check for version 
 }
 ```
 
