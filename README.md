@@ -24,6 +24,18 @@ dependencies {
 ```
 
 ## Usage
+ * <b>Interface SecureQR</b>  
+By implementing the SecureQR interface, you can develop custom Android Application dealing with our Secure QR. 
+
+|Type|Method|Description|  
+|----|------|-----------|
+|void|setAuthURL(String authURL)||
+|void|setRequestCode(int requestCode)||
+|String|getAuthURL()||
+|int|getRequestCode()||
+|void|processResult(IntentResult result)||
+|void|requestPOST(RequestDTO data)||
+|boolean|isJSON(String s)||
 
 [ResultActivity.java]
 ``` Java
@@ -67,16 +79,17 @@ final String activityName = "ResultActivity";
         // initialize
         SecureQR secureQR = new SecureQR(context, packageName, activityName, authURL, QR_RequestCode);     
     }
+
+
 ```
-Context context : Application Context
-
-String packageName : A package name of activity that you will use as a ResultActivity of SecureQR
-
-String activityName : Name of ResultActivity of SecureQR
-
-String authURL : URL of your auth server  
-
-int QR_RequestCode : zxing request Code
+* <b>Constructor of Class SecureQR </b>  
+|Type|Method|Description|  
+|----|------|-----------|
+|Context|context|Application Context|
+|String|packageName|A package name of activity that you will use as a ResultActivity of SecureQR|
+|String|activityName|Name of ResultActivity of SecureQR|
+|String|authURL|(Must be checked!) URL of your auth server|
+|int|QR_RequestCode|zxing request Code|
 
 ``` Java
 @Override
