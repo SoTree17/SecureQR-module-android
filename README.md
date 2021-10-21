@@ -148,8 +148,8 @@ git push origin <topic-branch-name>
 
 ## Copyright
 
-|Component|Version|Homepage|License|File No.|
-|----|------|-----------|------|-------|
-|Retrofit|2.9.0|https://square.github.io/retrofit/|Apache-2.0 License||
-|Zxing|4.2.0|https://github.com/zxing/zxing|Apache-2.0 License||
-|Gson|2.9.0|https://github.com/google/gson|Apache-2.0 License||
+|Component|Version|Homepage|License|
+|----|------|-----------|------|
+|Retrofit|2.9.0|https://square.github.io/retrofit/|Apache-2.0 License|
+|Zxing|4.2.0|https://github.com/zxing/zxing|Apache-2.0 License|
+|Gson|2.9.0|https://github.com/google/gson|Apache-2.0 License|
