@@ -44,7 +44,4 @@ dependencies {
 
     // Retrofit
     compileOnly 'com.squareup.retrofit2:retrofit:2.9.0'
-
-    // Lottie
-    compileOnly 'com.airbnb.android:lottie:4.1.0'
 }
