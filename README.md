@@ -33,8 +33,8 @@ dependencies {
 |String|authURL|(Must be checked!) URL of your auth server.|
 |int|QR_RequestCode|zxing request Code.|
 
- * <b>Interface SecureQR</b>  
-By implementing the SecureQR interface, you can develop custom Android Application dealing with our Secure QR. 
+ * <b>Interface Communicator</b>  
+By implementing the SecureQR interface(Communicator), you can develop custom Android Application dealing with our Secure QR. 
 
 |Type|Method|Description|  
 |----|------|-----------|
