@@ -42,7 +42,7 @@ By implementing the SecureQR interface(Communicator), you can develop custom And
 |void|setRequestCode(int requestCode)|Set request code for onActivityResult() with zxing|
 |String|getAuthURL()|Get a url of your auth server.|
 |int|getRequestCode()|Get request code.|
-|void|processResult(IntentResult result)|Process a result of data scanned with zxing.|
+|void|processResult(IntentResult result)|Process a result data of QR scanning with zxing.|
 |void|requestPOST(RequestDTO data)|Request POST with RequestDTO to your auth server using Retrofit.|
 |boolean|isJSON(String s)|Check whether a current string is JSON type.|
 
