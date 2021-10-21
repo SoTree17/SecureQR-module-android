@@ -131,7 +131,7 @@ If you're not familiar with pull requests, you can follow these steps.
 1. Fork this project and clone your fork    
 ~~~
 git clone https://github.com/<user-name>/secureQR-module-android.git
-cd secureQR-module
+cd secureQR-module-android
 ~~~
 2. Create a new topic branch (off the main project development branch) to contain your feature, change, or fix
 ~~~
