@@ -38,13 +38,13 @@ By implementing the SecureQR interface, you can develop custom Android Applicati
 
 |Type|Method|Description|  
 |----|------|-----------|
-|void|setAuthURL(String authURL)||
-|void|setRequestCode(int requestCode)||
-|String|getAuthURL()||
-|int|getRequestCode()||
-|void|processResult(IntentResult result)||
-|void|requestPOST(RequestDTO data)||
-|boolean|isJSON(String s)||
+|void|setAuthURL(String authURL)|Set a url of your auth server.|
+|void|setRequestCode(int requestCode)|Set request code for onActivityResult() with zxing|
+|String|getAuthURL()|Get a url of your auth server.|
+|int|getRequestCode()|Get request code.|
+|void|processResult(IntentResult result)|Process a result of data scanned with zxing.|
+|void|requestPOST(RequestDTO data)|Request POST with RequestDTO to your auth server using Retrofit.|
+|boolean|isJSON(String s)|Check whether a current string is JSON type.|
 
 ## Usage
 
