@@ -22,7 +22,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class SecureQR {
+public class SecureQR implements Communicator{
     // --------------------------- CAUTION! ----------------------------------------------------
     //---------- You have to change below URL to your Auth Server URL ---------------------------
 
@@ -135,7 +135,7 @@ public class SecureQR {
         });
     }
 
-    private RequestDTO jsonParsing(String raw_data) {
+    public RequestDTO jsonParsing(String raw_data) {
         // error handling 위한 변수 초기화
         int c_index = DefaultIndex;
         int d_index = DefaultIndex;
