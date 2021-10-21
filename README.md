@@ -1,3 +1,5 @@
+<div align=center> <a href="https://github.com/SoTree17/secureQR-module-android/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/SoTree17/secureQR-module-android"></a> </div>
+
 ## Requrements 
 - `Java==8`
 - `Android==7.0(Platform Level 24)`
