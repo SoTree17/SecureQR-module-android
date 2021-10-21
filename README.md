@@ -23,7 +23,7 @@ dependencies {
 }
 ```
 ## Class 'SecureQR'
-* <b>Constructor of Class SecureQR </b>  
+> <b>Constructor parameters of Class SecureQR </b>  
 
 |Type|Name|Description|  
 |----|------|-----------|
@@ -33,7 +33,7 @@ dependencies {
 |String|authURL|(Must be checked!) URL of your auth server.|
 |int|QR_RequestCode|zxing request Code.|
 
- * <b>Interface Communicator</b>  
+ > <b>Interface Communicator</b>  
 By implementing the SecureQR interface(Communicator), you can develop custom Android Application dealing with our Secure QR. 
 
 |Type|Method|Description|  
