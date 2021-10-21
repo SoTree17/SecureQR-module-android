@@ -148,7 +148,7 @@ git push origin <topic-branch-name>
 
 #Copyright
 
-|Component|Version|Homepage|License|File No.   
+|Component|Version|Homepage|License|File No.|
 |----|------|-----------|
 |Retrofit|2.9.0|https://square.github.io/retrofit/|Apache-2.0 License||
 |Zxing|4.2.0|https://github.com/zxing/zxing|Apache-2.0 License||
