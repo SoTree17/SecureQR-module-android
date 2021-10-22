@@ -2,7 +2,8 @@
 </div>
 
 # SecureQR module for android
-
+[한국어 README](https://github.com/SoTree17/secureQR-module-android/blob/master/README_KR.mde)
+ 
 ## Overview
 :wave: This is an Android library for easier usage of [SecureQR](https://github.com/SoTree17/secureQR-module) scanning.
 
@@ -40,10 +41,10 @@ dependencies {
 |String|packageName|A package name of activity that you will use as a ResultActivity of SecureQR.|
 |String|activityName|Name of ResultActivity of SecureQR.|
 |String|authURL|(Must be checked!) URL of your auth server.|
-|int|QR_RequestCode|zxing request Code.|
+|int|requestCode|zxing request Code.|
 
  > <b>Interface Communicator</b>  
-By implementing the SecureQR interface(Communicator), you can develop custom Android Application dealing with our Secure QR. 
+By implementing the SecureQR interface(Communicator), you can develop custom Android Application dealing with our **SecureQR**. 
 
 |Type|Method|Description|  
 |----|------|-----------|
@@ -86,8 +87,8 @@ public class ResultActivity extends AppCompatActivity {
 }
 ```
 * Create **your custom ResultAcitvity** that will show the final result of SecureQR
-* All you have to do is getting the final URL decryted from server with String extra `"url"`
-* You can use additional information to determine whether the scanned QR code is a Secure QR code or not
+* All you have to do is getting the final URL decrypted from server with String extra `"url"`
+* You can use additional information to determine whether the scanned QR code is a **SecureQR** code or not
 
 [[MainActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/app-with-module/app/src/main/java/com/example/qrscanner/MainActivity.java#L64)]
 ``` Java
@@ -122,7 +123,7 @@ final String activityName = "ResultActivity";
 ```
 
 * Call processResult() method with IntentResult data scanned from zxing
-* processResult() method will **automatically launch the Result Activity** specified by creating a Secure QR instance
+* processResult() method will **automatically launch the Result Activity** specified by creating a SecureQR instance
 
 ## Contribution
 ### Reporting bugs
