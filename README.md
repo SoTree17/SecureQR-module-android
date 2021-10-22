@@ -4,7 +4,7 @@
 # SecureQR module for android
 
 ## Overview
-:wave: This is an Android library for easier usage of SecureQR.
+:wave: This is an Android library for easier usage of [SecureQR](https://github.com/SoTree17/secureQR-module).
 
 ## Requirements 
 - `Java==8`
