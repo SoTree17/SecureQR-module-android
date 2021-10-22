@@ -30,7 +30,7 @@ dependencies {
     implementation 'com.github.SoTree17:SecureQR-module-android:0.0.3'          // check for version 
 }
 ```
-* :warning: You have to use **zxing library** for scanning QR and **Retrofit** for requesting HTTP method to your auth server
+:warning: You have to use **zxing library** for scanning QR and **Retrofit** for requesting HTTP method to your auth server
 ## Class 'SecureQR'
 > <b>Constructor parameters of Class SecureQR </b>  
 
