@@ -51,7 +51,7 @@ By implementing the SecureQR interface(Communicator), you can develop custom And
 ## Usage
 
 
-[ResultActivity.java]
+[[ResultActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/app-with-module/app/src/main/java/com/example/qrscanner/ResultActivity.java#L47)]
 ``` Java
 public class ResultActivity extends AppCompatActivity {
         @Override
@@ -78,7 +78,7 @@ public class ResultActivity extends AppCompatActivity {
 }
 ```
 
-[[MainActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/master/app/src/main/java/com/example/qrscanner/MainActivity.java#L87)]
+[[MainActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/app-with-module/app/src/main/java/com/example/qrscanner/MainActivity.java#L64)]
 ``` Java
 final String authURL = "http://yourServerURL";
 final int QR_RequestCode = 12345;  // Any number what you want
