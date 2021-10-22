@@ -78,7 +78,7 @@ public class ResultActivity extends AppCompatActivity {
 }
 ```
 
-[MainActivity.java]
+[[MainActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/master/app/src/main/java/com/example/qrscanner/MainActivity.java#L87)]
 ``` Java
 final String authURL = "http://yourServerURL";
 final int QR_RequestCode = 12345;  // Any number what you want
