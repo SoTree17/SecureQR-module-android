@@ -1,4 +1,4 @@
-<div align=center> <img src="https://img.shields.io/badge/-Android-3DDC84?style=flat&logo=Android"> <img src="https://img.shields.io/badge/-Java-007396?style=flat&logo=Java"> <a href="https://github.com/SoTree17/secureQR-module-android/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/SoTree17/secureQR-module-android"></a> 
+<div align=center> <a href="https://developer.android.com/"><img src="https://img.shields.io/badge/-Android-3DDC84?style=flat&logo=Android"></a> <a href="https://www.java.com/en/"><img src="https://img.shields.io/badge/-Java-007396?style=flat&logo=Java"></a> <a href="https://github.com/SoTree17/secureQR-module-android/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/SoTree17/secureQR-module-android"></a> 
 </div>
 
 # SecureQR module for android
