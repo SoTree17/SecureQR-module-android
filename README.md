@@ -1,6 +1,12 @@
-<div align=center> <a href="https://github.com/SoTree17/secureQR-module-android/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/SoTree17/secureQR-module-android"></a> </div>
+<div align=center> <img src="https://img.shields.io/badge/-Android-3DDC84?style=flat&logo=Android"> <img src="https://img.shields.io/badge/-Java-007396?style=flat&logo=Java"> <a href="https://github.com/SoTree17/secureQR-module-android/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/SoTree17/secureQR-module-android"></a> 
+</div>
 
-## Requrements 
+# SecureQR module for android
+
+## Overview
+:wave: This is an Android library for easier usage of SecureQR.
+
+## Requirements 
 - `Java==8`
 - `Android==7.0(Platform Level 24)`
 
@@ -24,6 +30,7 @@ dependencies {
     implementation 'com.github.SoTree17:SecureQR-module-android:0.0.3'          // check for version 
 }
 ```
+* You have to use **zxing library** for scanning QR and **Retrofit** for requesting HTTP method to your auth server.
 ## Class 'SecureQR'
 > <b>Constructor parameters of Class SecureQR </b>  
 
@@ -50,6 +57,7 @@ By implementing the SecureQR interface(Communicator), you can develop custom And
 
 ## Usage
 
+You can check the overall usage example :point_right: [here.](https://github.com/SoTree17/secureQR-android-example/tree/app-with-module)
 
 [[ResultActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/app-with-module/app/src/main/java/com/example/qrscanner/ResultActivity.java#L47)]
 ``` Java
@@ -77,6 +85,9 @@ public class ResultActivity extends AppCompatActivity {
         }
 }
 ```
+* Create **your custom ResultAcitvity** that will show the final result of SecureQR  
+* All you have to do is getting the final URL decryted from server with String extra `"url"`
+* You can use additional information to determine whether the scanned QR code is a Secure QR code or not.
 
 [[MainActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/app-with-module/app/src/main/java/com/example/qrscanner/MainActivity.java#L64)]
 ``` Java
@@ -96,7 +107,7 @@ final String activityName = "ResultActivity";
 
 
 ```
-
+* Create SecureQR instance on a parent activity of scanning QR Activity 
 
 ``` Java
 @Override
@@ -109,6 +120,9 @@ final String activityName = "ResultActivity";
         super.onActivityResult(requestCode, resultCode, data);
     }
 ```
+
+* Call processResult() method with IntentResult data scanned from zxing
+* processResult() method will **automatically launch the Result Activity** specified by creating a Secure QR instance.
 
 ## Contribution
 ### Reporting bugs
