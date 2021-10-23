@@ -1,10 +1,11 @@
 <div align=center> <a href="https://developer.android.com/"><img src="https://img.shields.io/badge/-Android-3DDC84?style=flat&logo=Android"></a> <a href="https://www.java.com/en/"><img src="https://img.shields.io/badge/-Java-007396?style=flat&logo=Java"></a> <a href="https://github.com/SoTree17/secureQR-module-android/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/SoTree17/secureQR-module-android"></a> 
 </div>
 
-#  Android 기반 보안QR 스캔 App 개발을 위한 라이브러리
-
+# SecureQR module for android
+[한국어 README](https://github.com/SoTree17/secureQR-module-android/blob/master/README_KR.md)
+ 
 ## Overview
-:wave: [SecureQR](https://github.com/SoTree17/secureQR-module) 를 쉽게 스캔하기 위한 Android 라이브러리입니다!
+:wave: This is an Android library for easier usage of [SecureQR](https://github.com/SoTree17/secureQR-module) scanning.
 
 ## Requirements 
 - `Java==8`
@@ -30,35 +31,34 @@ dependencies {
     implementation 'com.github.SoTree17:SecureQR-module-android:0.0.3'          // check for version 
 }
 ```
-:warning: 라이브러리의 정상적인 적용을 위해서는 QR코드 스캔을 위한 **zxing library**, 그리고 Auth 서버와의 HTTP 통신을 위한 **Retrofit** 을 사용해야 합니다.
+:warning: You have to use **zxing library** for scanning QR and **Retrofit** for requesting HTTP method to your auth server
 ## Class 'SecureQR'
-> <b>SecureQR 클래스 생성자의 parameter </b>  
+> <b>Constructor parameters of Class SecureQR </b>  
 
 |Type|Name|Description|  
 |----|------|-----------|
 |Context|context|Application Context.|
-|String|packageName|SecureQR의 ResultActivity로 사용할 액티비티의 패키지 이름.|
-|String|activityName|SecureQR의 ResultActivity 이름.|
-|String|authURL|(**반드시 확인 필요!**) 인증 서버의 (base) URL|
-|int|requestCode|zxing 요청 코드|
+|String|packageName|A package name of activity that you will use as a ResultActivity of SecureQR.|
+|String|activityName|Name of ResultActivity of SecureQR.|
+|String|authURL|(Must be checked!) URL of your auth server.|
+|int|requestCode|zxing request Code.|
 
- > <b>Interface Communicator</b> 
- SecureQR의 interface(Communicator)를 구현함으로써, SoTree의 Secure QR을 인식할 수 있는 custom Android App을 개발하실 수 있습니다.
-
+ > <b>Interface Communicator</b>  
+By implementing the SecureQR interface(Communicator), you can develop custom Android Application dealing with our **SecureQR**. 
 
 |Type|Method|Description|  
 |----|------|-----------|
-|void|setAuthURL(String authURL)|인증 서버의 (base) URL을 지정합니다.|
-|void|setRequestCode(int requestCode)|(zxing) onActivityResult()의 request code를 지정합니다. |
-|String|getAuthURL()|인증 서버의 (base) URL를 반환합니다.|
-|int|getRequestCode()|(zxing) request code를 반환합니다. |
-|void|processResult(IntentResult result)|zxing을 이용해 QR코드를 스캔할 결과를 처리합니다.|
-|void|requestPOST(RequestDTO data)| Retrofit을 이용해 auth 서버에 RequestDTO 객체 형태의 POST를 요청합니다.|
-|boolean|isJSON(String s)|문자열이 JSON 형식인지 확인합니다.|
+|void|setAuthURL(String authURL)|Set a url of your auth server.|
+|void|setRequestCode(int requestCode)|Set request code for onActivityResult() with zxing.|
+|String|getAuthURL()|Get a url of your auth server.|
+|int|getRequestCode()|Get request code.|
+|void|processResult(IntentResult result)|Process a result data of QR scanning with zxing.|
+|void|requestPOST(RequestDTO data)|Request POST with RequestDTO to your auth server using Retrofit.|
+|boolean|isJSON(String s)|Check whether a current string is JSON type.|
 
 ## Usage
 
-사용 예제를 확인하시려면 클릭해주세요! :point_right: [here](https://github.com/SoTree17/secureQR-android-example/tree/app-with-module).
+You can check the overall usage example :point_right: [here](https://github.com/SoTree17/secureQR-android-example/tree/app-with-module).
 
 [[ResultActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/app-with-module/app/src/main/java/com/example/qrscanner/ResultActivity.java#L47)]
 ``` Java
@@ -86,9 +86,9 @@ public class ResultActivity extends AppCompatActivity {
         }
 }
 ```
-* SecureQR의 최종 결과를 확인할 수 있는 ** custom ResultActivity ** 을 생성합니다.
-* String extra `"url"을 통해 서버에서 해독된 최종 URL을 확인하기만 하면 됩니다!
-* 스캔한 QR코드가 **SecureQR**에 해당하는지 여부를 확인하기 위해 추가적인 정보를 사용할 수 있습니다.
+* Create **your custom ResultAcitvity** that will show the final result of SecureQR
+* All you have to do is getting the final URL decrypted from server with String extra `"url"`
+* You can use additional information to determine whether the scanned QR code is a **SecureQR** code or not
 
 [[MainActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/app-with-module/app/src/main/java/com/example/qrscanner/MainActivity.java#L64)]
 ``` Java
@@ -108,7 +108,7 @@ final String activityName = "ResultActivity";
 
 
 ```
-* scanning QR 액티비티의 부모 액티비티에서 SecureQR 클래스의 인스턴스를 생성합니다. 
+* Create SecureQR instance on a parent activity of scanning QR Activity
 
 ``` Java
 @Override
@@ -122,8 +122,8 @@ final String activityName = "ResultActivity";
     }
 ```
 
-* zxing에서 스캔 후 나온 IntentResult 객체 형태의 데이터를 processResult() 메소드로 처리합니다. 
-* processResult() 메소드는 **자동으로 SecureQR 객체의 Result Activity** 를 시작합니다. 
+* Call processResult() method with IntentResult data scanned from zxing
+* processResult() method will **automatically launch the Result Activity** specified by creating a SecureQR instance
 
 ## Contribution
 ### Reporting bugs
