@@ -128,6 +128,10 @@ final String activityName = "ResultActivity";
 |void|requestPOST(RequestDTO data)| Retrofit을 이용해 auth 서버에 RequestDTO 객체 형태의 POST를 요청합니다.|
 |boolean|isJSON(String s)|문자열이 JSON 형식인지 확인합니다.|
 
+## 라이브러리를 적용한 예시 애플리케이션
+![앱 구동](https://user-images.githubusercontent.com/72081383/132225111-4f0b6056-cf63-4928-b374-e77bd1e0b8c8.gif)
+* 자세한 소스 코드는 :point_right: [여기서](https://github.com/SoTree17/secureQR-android-example)
+
 ## 개발자
 * 김범규 ([BBongKim](https://github.com/BBongKim))
 * 조현준 ([chohj1111](https://github.com/chohj1111))
