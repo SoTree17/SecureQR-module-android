@@ -13,7 +13,7 @@ README in English is :point_right: [here](https://github.com/SoTree17/secureQR-m
 - `Java==8`
 - `Android>=7.0(Platform Level 24)`
 
-## Gradle
+## Gradle 
 ``` 
 // Project gradle
 allprojects {
