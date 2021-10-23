@@ -2,7 +2,7 @@
 </div>
 
 # SecureQR module for android
-[한국어 README](https://github.com/SoTree17/secureQR-module-android/blob/master/README_KR.mde)
+[한국어 README](https://github.com/SoTree17/secureQR-module-android/blob/master/README_KR.md)
  
 ## Overview
 :wave: This is an Android library for easier usage of [SecureQR](https://github.com/SoTree17/secureQR-module) scanning.
