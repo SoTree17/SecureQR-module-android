@@ -3,7 +3,7 @@
 
 #  Android 기반 보안QR 스캔 App 개발을 위한 라이브러리
 
-README in English is :point_right: [here](https://github.com/SoTree17/secureQR-module-android/edit/master/README_EN.md).
+English README is :point_right: [here](https://github.com/SoTree17/secureQR-module-android/edit/master/README_EN.md).
 
 ## 개요
 * :wave: [SecureQR](https://github.com/SoTree17/secureQR-module) 를 쉽게 스캔하기 위한 Android 라이브러리입니다!
