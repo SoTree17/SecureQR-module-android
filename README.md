@@ -5,8 +5,9 @@
 
 README in English is :point_right: [here](https://github.com/SoTree17/secureQR-module-android/edit/master/README_EN.md).
 
-## Overview
-:wave: [SecureQR](https://github.com/SoTree17/secureQR-module) 를 쉽게 스캔하기 위한 Android 라이브러리입니다!
+## 개요
+* :wave: [SecureQR](https://github.com/SoTree17/secureQR-module) 를 쉽게 스캔하기 위한 Android 라이브러리입니다!
+* 생성한 보안 QR 코드의 인식 결과를 전달 받은 후, **서버로 복호화를 요청**하고 **복호화된 원본 URL을 쉽게 추출**할 수 있도록 도와줍니다.
 
 ## Requirements 
 - `Java==8`
