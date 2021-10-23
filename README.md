@@ -100,7 +100,7 @@ final String activityName = "ResultActivity";
     }
 ```
 
-* zxing에서 스캔 후 나온 IntentResult 객체 형태의 데이터를 processResult() 메소드로 처리합니다. 
+* ZXing에서 스캔 후 나온 IntentResult 객체 형태의 데이터를 processResult() 메소드로 처리합니다. 
 * processResult() 메소드는 **자동으로 SecureQR 객체의 Result Activity** 를 시작합니다.
 
 ## Class 'SecureQR'
@@ -112,7 +112,7 @@ final String activityName = "ResultActivity";
 |String|packageName|SecureQR의 ResultActivity로 사용할 액티비티의 패키지 이름.|
 |String|activityName|SecureQR의 ResultActivity 이름.|
 |String|authURL|(**반드시 확인 필요!**) 인증 서버의 (base) URL|
-|int|requestCode|zxing 요청 코드|
+|int|requestCode|ZXing 요청 코드|
 
  > <b>Interface Communicator</b> 
  SecureQR의 interface(Communicator)를 구현함으로써, SoTree의 Secure QR을 인식할 수 있는 custom Android App을 개발하실 수 있습니다.
@@ -121,7 +121,7 @@ final String activityName = "ResultActivity";
 |Type|Method|Description|  
 |----|------|-----------|
 |void|setAuthURL(String authURL)|인증 서버의 (base) URL을 지정합니다.|
-|void|setRequestCode(int requestCode)|(zxing) onActivityResult()의 request code를 지정합니다. |
+|void|setRequestCode(int requestCode)|(ZXing) onActivityResult()의 request code를 지정합니다. |
 |String|getAuthURL()|인증 서버의 (base) URL를 반환합니다.|
 |int|getRequestCode()|(ZXing) request code를 반환합니다. |
 |void|processResult(IntentResult result)|ZXing을 이용해 QR코드를 스캔할 결과를 처리합니다.|
