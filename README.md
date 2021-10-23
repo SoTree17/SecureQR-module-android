@@ -34,31 +34,6 @@ dependencies {
 ```
 :warning: 라이브러리의 정상적인 적용을 위해서는 QR코드 스캔을 위한 **zxing library**, 그리고 Auth 서버와의 HTTP 통신을 위한 **Retrofit** 을 사용해야 합니다.
 
-## Class 'SecureQR'
-> <b>SecureQR 클래스 생성자의 parameter </b>  
-
-|Type|Name|Description|  
-|----|------|-----------|
-|Context|context|Application Context.|
-|String|packageName|SecureQR의 ResultActivity로 사용할 액티비티의 패키지 이름.|
-|String|activityName|SecureQR의 ResultActivity 이름.|
-|String|authURL|(**반드시 확인 필요!**) 인증 서버의 (base) URL|
-|int|requestCode|zxing 요청 코드|
-
- > <b>Interface Communicator</b> 
- SecureQR의 interface(Communicator)를 구현함으로써, SoTree의 Secure QR을 인식할 수 있는 custom Android App을 개발하실 수 있습니다.
-
-
-|Type|Method|Description|  
-|----|------|-----------|
-|void|setAuthURL(String authURL)|인증 서버의 (base) URL을 지정합니다.|
-|void|setRequestCode(int requestCode)|(zxing) onActivityResult()의 request code를 지정합니다. |
-|String|getAuthURL()|인증 서버의 (base) URL를 반환합니다.|
-|int|getRequestCode()|(zxing) request code를 반환합니다. |
-|void|processResult(IntentResult result)|zxing을 이용해 QR코드를 스캔할 결과를 처리합니다.|
-|void|requestPOST(RequestDTO data)| Retrofit을 이용해 auth 서버에 RequestDTO 객체 형태의 POST를 요청합니다.|
-|boolean|isJSON(String s)|문자열이 JSON 형식인지 확인합니다.|
-
 ## Usage
 
 사용 예제를 확인하시려면 클릭해주세요! :point_right: [here](https://github.com/SoTree17/secureQR-android-example/tree/app-with-module).
@@ -126,7 +101,36 @@ final String activityName = "ResultActivity";
 ```
 
 * zxing에서 스캔 후 나온 IntentResult 객체 형태의 데이터를 processResult() 메소드로 처리합니다. 
-* processResult() 메소드는 **자동으로 SecureQR 객체의 Result Activity** 를 시작합니다. 
+* processResult() 메소드는 **자동으로 SecureQR 객체의 Result Activity** 를 시작합니다.
+
+## Class 'SecureQR'
+> <b>SecureQR 클래스 생성자의 parameter </b>  
+
+|Type|Name|Description|  
+|----|------|-----------|
+|Context|context|Application Context.|
+|String|packageName|SecureQR의 ResultActivity로 사용할 액티비티의 패키지 이름.|
+|String|activityName|SecureQR의 ResultActivity 이름.|
+|String|authURL|(**반드시 확인 필요!**) 인증 서버의 (base) URL|
+|int|requestCode|zxing 요청 코드|
+
+ > <b>Interface Communicator</b> 
+ SecureQR의 interface(Communicator)를 구현함으로써, SoTree의 Secure QR을 인식할 수 있는 custom Android App을 개발하실 수 있습니다.
+
+
+|Type|Method|Description|  
+|----|------|-----------|
+|void|setAuthURL(String authURL)|인증 서버의 (base) URL을 지정합니다.|
+|void|setRequestCode(int requestCode)|(zxing) onActivityResult()의 request code를 지정합니다. |
+|String|getAuthURL()|인증 서버의 (base) URL를 반환합니다.|
+|int|getRequestCode()|(zxing) request code를 반환합니다. |
+|void|processResult(IntentResult result)|zxing을 이용해 QR코드를 스캔할 결과를 처리합니다.|
+|void|requestPOST(RequestDTO data)| Retrofit을 이용해 auth 서버에 RequestDTO 객체 형태의 POST를 요청합니다.|
+|boolean|isJSON(String s)|문자열이 JSON 형식인지 확인합니다.|
+
+## 개발자
+* 김범규 ([BBongKim](https://github.com/BBongKim))
+* 조현준 ([chohj1111](https://github.com/chohj1111))
 
 ## Contribution
 ### Reporting bugs
