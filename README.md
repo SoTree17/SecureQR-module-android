@@ -37,7 +37,7 @@ dependencies {
 
 ## 사용법
 
-사용 예제를 확인하시려면 클릭해주세요! :point_right: [here](https://github.com/SoTree17/secureQR-android-example/tree/app-with-module).
+사용 예제를 확인하려면 클릭해주세요! :point_right: [here](https://github.com/SoTree17/secureQR-android-example/tree/app-with-module).
 
 [[ResultActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/app-with-module/app/src/main/java/com/example/qrscanner/ResultActivity.java#L47)]
 ``` Java
