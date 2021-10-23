@@ -1,16 +1,16 @@
 <div align=center> <a href="https://developer.android.com/"><img src="https://img.shields.io/badge/-Android-3DDC84?style=flat&logo=Android"></a> <a href="https://www.java.com/en/"><img src="https://img.shields.io/badge/-Java-007396?style=flat&logo=Java"></a> <a href="https://github.com/SoTree17/secureQR-module-android/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/SoTree17/secureQR-module-android"></a> 
 </div>
 
-README in English is :point_right: [here](https://github.com/SoTree17/secureQR-module-android/edit/master/README_EN.md).
-
 #  Android 기반 보안QR 스캔 App 개발을 위한 라이브러리
+
+README in English is :point_right: [here](https://github.com/SoTree17/secureQR-module-android/edit/master/README_EN.md).
 
 ## Overview
 :wave: [SecureQR](https://github.com/SoTree17/secureQR-module) 를 쉽게 스캔하기 위한 Android 라이브러리입니다!
 
 ## Requirements 
 - `Java==8`
-- `Android==7.0(Platform Level 24)`
+- `Android>=7.0(Platform Level 24)`
 
 ## Gradle
 ``` 
@@ -33,6 +33,7 @@ dependencies {
 }
 ```
 :warning: 라이브러리의 정상적인 적용을 위해서는 QR코드 스캔을 위한 **zxing library**, 그리고 Auth 서버와의 HTTP 통신을 위한 **Retrofit** 을 사용해야 합니다.
+
 ## Class 'SecureQR'
 > <b>SecureQR 클래스 생성자의 parameter </b>  
 
