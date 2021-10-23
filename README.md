@@ -32,7 +32,7 @@ dependencies {
     implementation 'com.github.SoTree17:SecureQR-module-android:0.0.3'          // check for version 
 }
 ```
-:warning: 라이브러리의 정상적인 적용을 위해서는 QR코드 스캔을 위한 **zxing library**, 그리고 Auth 서버와의 HTTP 통신을 위한 **Retrofit** 을 사용해야 합니다.
+:warning: 라이브러리의 정상적인 적용을 위해서는 QR코드 스캔을 위한 **ZXing library**, 그리고 Auth 서버와의 HTTP 통신을 위한 **Retrofit** 을 사용해야 합니다.
 
 ## Usage
 
@@ -123,8 +123,8 @@ final String activityName = "ResultActivity";
 |void|setAuthURL(String authURL)|인증 서버의 (base) URL을 지정합니다.|
 |void|setRequestCode(int requestCode)|(zxing) onActivityResult()의 request code를 지정합니다. |
 |String|getAuthURL()|인증 서버의 (base) URL를 반환합니다.|
-|int|getRequestCode()|(zxing) request code를 반환합니다. |
-|void|processResult(IntentResult result)|zxing을 이용해 QR코드를 스캔할 결과를 처리합니다.|
+|int|getRequestCode()|(ZXing) request code를 반환합니다. |
+|void|processResult(IntentResult result)|ZXing을 이용해 QR코드를 스캔할 결과를 처리합니다.|
 |void|requestPOST(RequestDTO data)| Retrofit을 이용해 auth 서버에 RequestDTO 객체 형태의 POST를 요청합니다.|
 |boolean|isJSON(String s)|문자열이 JSON 형식인지 확인합니다.|
 
