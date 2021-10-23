@@ -9,7 +9,7 @@ README in English is :point_right: [here](https://github.com/SoTree17/secureQR-m
 * :wave: [SecureQR](https://github.com/SoTree17/secureQR-module) 를 쉽게 스캔하기 위한 Android 라이브러리입니다!
 * 생성한 보안 QR 코드의 인식 결과를 전달 받은 후, **서버로 복호화를 요청**하고 **복호화된 원본 URL을 쉽게 추출**할 수 있도록 도와줍니다.
 
-## Requirements 
+## 개발 환경
 - `Java==8`
 - `Android>=7.0(Platform Level 24)`
 
@@ -35,7 +35,7 @@ dependencies {
 ```
 :warning: 라이브러리의 정상적인 적용을 위해서는 QR코드 스캔을 위한 **ZXing library**, 그리고 Auth 서버와의 HTTP 통신을 위한 **Retrofit** 을 사용해야 합니다.
 
-## Usage
+## 
 
 사용 예제를 확인하시려면 클릭해주세요! :point_right: [here](https://github.com/SoTree17/secureQR-android-example/tree/app-with-module).
 
