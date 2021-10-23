@@ -104,7 +104,7 @@ final String activityName = "ResultActivity";
 * ZXing에서 스캔 후 나온 IntentResult 객체 형태의 데이터를 processResult() 메소드로 처리합니다. 
 * processResult() 메소드는 **자동으로 SecureQR 객체의 Result Activity** 를 시작합니다.
 
-## Class 'SecureQR'
+## SecureQR 클래스
 > <b>SecureQR 클래스 생성자의 parameter </b>  
 
 |Type|Name|Description|  
