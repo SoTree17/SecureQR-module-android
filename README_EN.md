@@ -9,7 +9,7 @@
 
 ## Requirements 
 - `Java==8`
-- `Android==7.0(Platform Level 24)`
+- `Android>=7.0(Platform Level 24)`
 
 ## Gradle
 ``` 
@@ -32,6 +32,7 @@ dependencies {
 }
 ```
 :warning: You have to use **zxing library** for scanning QR and **Retrofit** for requesting HTTP method to your auth server
+
 ## Class 'SecureQR'
 > <b>Constructor parameters of Class SecureQR </b>  
 
