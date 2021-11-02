@@ -127,7 +127,6 @@ final String activityName = "ResultActivity";
 |String|packageName|SecureQR의 ResultActivity로 사용할 액티비티의 패키지 이름. (경로의 마지막 '.' 생략)|
 |String|activityName|SecureQR의 ResultActivity 이름.|
 |String|authURL|(**반드시 확인 필요!**) 인증 서버의 (base) URL|
-|int|requestCode|ZXing 요청 코드|
  > **Interface Communicator** </br> SecureQR의 interface(Communicator)를 구현함으로써, SoTree의 Secure QR코드 처리 과정을 커스터마이징 하실 수 있습니다.
 
 
