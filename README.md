@@ -37,26 +37,16 @@ dependencies {
 
 ## 프로젝트 구조
 ```
-| 
-|   
-\---com
-    \---example
-        \---qrscanner
-            |   MainActivity.java
-            |   QrReaderActivity.java
-            |   ResultActivity.java
-            |   
-            +---data
-            |       RequestData.java
-            |       RequestDTO.java
-            |       ResponseUrl.java
-            |       
-            +---json
-            |       JsonParsing.java
-            |       
-            \---retrofit
-                    RetrofitAPI.java
-
+com/
+├─ secureQR/
+│  ├─ data/
+│  │  ├─ RequestDTO.java
+│  │  ├─ ResponseUrl.java
+│  ├─ module/
+│  │  ├─ Communicator.java
+│  │  ├─ SecureQR.java
+│  ├─ retrofit/
+│  │  ├─ RetrofitAPI.java
 ```
 
 ## 사용법
