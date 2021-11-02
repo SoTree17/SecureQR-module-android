@@ -15,7 +15,7 @@ public class SecureQRTest {
 
     @Before
     public void setUp() {
-        secureQR = new SecureQR(ApplicationProvider.getApplicationContext(), " ", " ", " ", 12345);
+        secureQR = new SecureQR(ApplicationProvider.getApplicationContext(), " ", " ", " ");
     }
 
     @Test

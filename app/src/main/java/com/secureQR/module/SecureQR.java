@@ -24,12 +24,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class SecureQR implements Communicator{
     // --------------------------- CAUTION! ----------------------------------------------------
-    //---------- You have to change below URL to your Auth Server URL ---------------------------
+    //---------- You have to change below URL to your Auth Server URL --------------------------
 
     private String authURL = "";
-
-    //---------------------------------------------------------------------------------------------
-
+    //------------------------------------------------------------------------------------------
 
     private String pkgName = "";
     private String resultActivityName = "";
@@ -39,33 +37,22 @@ public class SecureQR implements Communicator{
     public final static int IsAuthQR = 1;
     public final static int IsNotAuthQR = -1;
     private final int DefaultIndex = -1;
-    private int RequestCode = 0x0000c0de;
-
 
     private final String ErrorMessage = "Invalid QR code data or Invalid auth server url";
 
-    public SecureQR(Context context, String packageName, String activityName, String authURL, int requestCode) {
+    public SecureQR(Context context, String packageName, String activityName, String authURL) {
         this.context = context;
         this.pkgName = packageName;
         this.resultActivityName = "." + activityName;
         this.authURL = authURL;
-        this.RequestCode = requestCode;
     }
 
     public void setAuthURL(String authURL) {
         this.authURL = authURL;
     }
 
-    public void setRequestCode(int requestCode) {
-        this.RequestCode = requestCode;
-    }
-
     public String getAuthURL() {
         return this.authURL;
-    }
-
-    public int getRequestCode() {
-        return this.RequestCode;
     }
 
     public void processResult(IntentResult result) {
