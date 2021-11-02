@@ -83,7 +83,7 @@ public class ResultActivity extends AppCompatActivity {
 * 서버에서 해독된 최종 URL을 얻기 위해선 key가 `"url"`인 StringExtra에서 추출해야 합니다.
 * 스캔한 QR코드가 **SecureQR**에 해당하는지 여부를 확인하기 위해 추가적인 정보를 사용할 수 있습니다.
 
-[[MainActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/app-with-module/app/src/main/java/com/example/qrscanner/MainActivity.java#L64)]
+[[MainActivity.java](https://github.com/SoTree17/secureQR-android-example/blob/master/app/src/main/java/com/example/qrscanner/MainActivity.java#L59)]
 ``` Java
 final String authURL = "http://yourServerURL";
 final int QR_RequestCode = 12345;  // Any number what you want
