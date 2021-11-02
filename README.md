@@ -96,7 +96,7 @@ final String activityName = "ResultActivity";
         setContentView(R.layout.activity_main);
 
         // initialize
-        SecureQR secureQR = new SecureQR(context, packageName, activityName, authURL, QR_RequestCode);     
+        SecureQR secureQR = new SecureQR(context, packageName, activityName, authURL);     
     }
 
 
@@ -134,9 +134,7 @@ final String activityName = "ResultActivity";
 |Type|Method|Description|  
 |----|------|-----------|
 |void|setAuthURL(String authURL)|인증 서버의 (base) URL을 지정합니다.|
-|void|setRequestCode(int requestCode)|(ZXing) onActivityResult()의 request code를 지정합니다. |
 |String|getAuthURL()|인증 서버의 (base) URL를 반환합니다.|
-|int|getRequestCode()|(ZXing) request code를 반환합니다. |
 |void|processResult(IntentResult result)|ZXing을 이용해 QR코드를 스캔할 결과를 처리합니다.|
 |void|requestPOST(RequestDTO data)| Retrofit을 이용해 auth 서버에 RequestDTO 객체 형태의 POST를 요청합니다.|
 |boolean|isJSON(String s)|문자열이 JSON 형식인지 확인합니다.|
