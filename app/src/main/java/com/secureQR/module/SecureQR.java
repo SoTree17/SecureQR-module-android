@@ -34,6 +34,8 @@ public class SecureQR implements Communicator{
 
     private Context context;
 
+    private String scannedData;
+
     public final static int IsAuthQR = 1;
     public final static int IsNotAuthQR = -1;
     private final int DefaultIndex = -1;
@@ -66,6 +68,7 @@ public class SecureQR implements Communicator{
 
                 // Pair 로 json parsing
                 String raw_data = result.getContents();
+                scannedData = raw_data;
 
                 // Json 형식일때만, 별도의 데이터 추출 후, Request 한다.
                 if (isJSON(raw_data)) {
@@ -164,6 +167,7 @@ public class SecureQR implements Communicator{
         Intent intent = new Intent();
         intent.setComponent(new ComponentName(pkgName, pkgName + resultActivityName));
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putExtra("scannedData", scannedData);
         intent.putExtra("isAuthQR", isAuthQR);
         intent.putExtra("url", url);
         context.startActivity(intent);
