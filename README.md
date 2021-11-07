@@ -30,7 +30,7 @@ dependencies {
     ...
     implementation 'com.journeyapps:zxing-android-embedded:$ZxingVersion'       // 4.2.0
     implementation 'com.squareup.retrofit2:retrofit:$RetrofitVersion'           // 2.9.0
-    implementation 'com.github.SoTree17:SecureQR-module-android:0.0.6'          // check for version 
+    implementation 'com.github.SoTree17:SecureQR-module-android:0.0.8'          // check for version 
 }
 ```
 :warning: 라이브러리의 정상적인 적용을 위해서는 QR코드 스캔을 위한 **ZXing library**, 그리고 Auth 서버와의 HTTP 통신을 위한 **Retrofit** 을 사용해야 합니다.
