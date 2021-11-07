@@ -129,11 +129,16 @@ final String activityName = "ResultActivity";
 |String|authURL|(**반드시 확인 필요!**) 인증 서버의 (base) URL|
 
 > **Error type** </br> SecureQR의 에러 종류
+
 |Type|Name|Description| 
 |----|------|-----------|
-|String||Application Context.|
+|String|FAIL_DECRYPT|복호화 실패|
+|String|FAIL_DATA|원본 데이터와 다름|
+|String|FAIL_HASH|해시 값이 다름|
+|String|FAIL_INDEX|인덱스 오류|
 
 > **Interface Communicator** </br> SecureQR의 interface(Communicator)를 구현함으로써, SoTree의 Secure QR코드 처리 과정을 커스터마이징 하실 수 있습니다.
+
 |Type|Method|Description|  
 |----|------|-----------|
 |void|setAuthURL(String authURL)|인증 서버의 (base) URL을 지정합니다.|
