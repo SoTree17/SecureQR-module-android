@@ -127,9 +127,13 @@ final String activityName = "ResultActivity";
 |String|packageName|SecureQR의 ResultActivity로 사용할 액티비티의 패키지 이름. (경로의 마지막 '.' 생략)|
 |String|activityName|SecureQR의 ResultActivity 이름.|
 |String|authURL|(**반드시 확인 필요!**) 인증 서버의 (base) URL|
- > **Interface Communicator** </br> SecureQR의 interface(Communicator)를 구현함으로써, SoTree의 Secure QR코드 처리 과정을 커스터마이징 하실 수 있습니다.
 
+> **Error type** </br> SecureQR의 에러 종류
+|Type|Name|Description| 
+|----|------|-----------|
+|String||Application Context.|
 
+> **Interface Communicator** </br> SecureQR의 interface(Communicator)를 구현함으로써, SoTree의 Secure QR코드 처리 과정을 커스터마이징 하실 수 있습니다.
 |Type|Method|Description|  
 |----|------|-----------|
 |void|setAuthURL(String authURL)|인증 서버의 (base) URL을 지정합니다.|
@@ -137,6 +141,7 @@ final String activityName = "ResultActivity";
 |void|processResult(IntentResult result)|ZXing을 이용해 QR코드를 스캔할 결과를 처리합니다.|
 |void|requestPOST(RequestDTO data)| Retrofit을 이용해 auth 서버에 RequestDTO 객체 형태의 POST를 요청합니다.|
 |boolean|isJSON(String s)|문자열이 JSON 형식인지 확인합니다.|
+
 
 ## 라이브러리를 적용한 예시 애플리케이션
 ![앱 구동](https://user-images.githubusercontent.com/72081383/132225111-4f0b6056-cf63-4928-b374-e77bd1e0b8c8.gif)
