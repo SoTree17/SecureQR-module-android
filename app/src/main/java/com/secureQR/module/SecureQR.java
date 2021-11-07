@@ -26,6 +26,11 @@ public class SecureQR implements Communicator{
     // --------------------------- CAUTION! ----------------------------------------------------
     //---------- You have to change below URL to your Auth Server URL --------------------------
 
+    static final String FAIL_DECRYPT = "복호화 실패";
+    static final String FAIL_INDEX = "인덱스 오류";
+    static final String FAIL_DATA = "원본 데이터와 다름";
+    static final String FAIL_HASH = "해시 값이 다름";
+
     private String authURL = "";
     //------------------------------------------------------------------------------------------
 
